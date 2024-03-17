@@ -120,3 +120,52 @@ s, i, em {
   font-size: 18px;
   font-weight: 200;
 }
+
+.body1 {
+  height: 370px;
+  width: 100%;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-image: url('../public/2.jpg');
+  background-size: contain;
+}
+
+.ads {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 250px;
+}
+
+.ads-img {
+  width: 580px;
+  margin-right: 40px;
+}
+
+.ads-title1 {
+  color: #e41e2e;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 80px;
+}
+
+.ads p {
+  color: rgb(131, 132, 133);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutUs {
+  height: 39px;
+  background-color: rgb(228, 30, 46);
+  color: #fff;
+  padding: 0 23px;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
