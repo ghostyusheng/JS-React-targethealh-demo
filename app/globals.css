@@ -105,3 +105,18 @@ s, i, em {
   background-size: cover !important;
   background-image: url('../public/1.png');
 }
+
+.banner-title {
+  position: relative;
+  top: 350px;
+  left: 200px;
+  color: #e41e2e;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.banner-title2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+}

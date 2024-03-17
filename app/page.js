@@ -4,9 +4,14 @@ import React from 'react';
 import { Button,ConfigProvider,Tabs } from 'antd';
 
 const Part1 = (
-  <div className="banner">
-    111
-  </div>
+  <main>
+    <div className="banner">
+      <div className="banner-title">
+        <div>TARGET HEALTHCARE LIMITED</div>
+        <div className="banner-title2">Generic, branded and unlicensed pharmaceutical supplier</div>
+      </div>
+    </div>
+  </main>
 )
 
 const onChange = (key) => {
