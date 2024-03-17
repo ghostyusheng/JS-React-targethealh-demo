@@ -133,7 +133,7 @@ s, i, em {
 .ads {
   display: flex;
   justify-content: space-between;
-  padding: 70px 250px;
+  padding: 40px 250px;
 }
 
 .ads-img {
@@ -184,5 +184,5 @@ s, i, em {
   font-weight: 500;
   display: flex;
   justify-content: center;
-  margin: 120px 0;
+  margin: 120px 0 20px 0;
 }

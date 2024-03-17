@@ -32,6 +32,54 @@ const Part1 = (
     <div className="body2">
     </div>
     <div className="whatWeDo">What we do</div>
+    <div className="ads">
+      <img className="ads-img" src="/5.png" />
+      <div>
+        <div className="ads-title1">Specials</div>
+        <div>
+          <p>Specials are unlicensed medicines custom-made to address patients’ unique requirements when licensed medicines fall short. We offer competitive pricing on both Drug Tariff and Non-Drug Tariff lines. Whether you require domestically manufactured or imported unlicensed medicines, our dedicated Specials team is here to help you source bespoke pharmaceutical solutions for your patients.</p>
+        </div>
+        <button className="aboutUs" onClick={() => {pointer.info("It's a React Demo..")}}>
+          LEARN MORE
+        </button>
+      </div>
+    </div>
+    <div className="ads">
+      <div>
+        <div className="ads-title1">Retail</div>
+        <div>
+          <p>Our retail team maintains a diverse inventory of generic medicines, including ambient, cold chain, and controlled drug pharmaceuticals. We also offer parallel-imported products, medical devices, and nutritional items to cater to your comprehensive healthcare needs.</p>
+        </div>
+        <button className="aboutUs" onClick={() => {pointer.info("It's a React Demo...")}}>
+          LEARN MORE
+        </button>
+      </div>
+      <img className="ads-img" src="/8.png" />
+    </div>
+    <div className="ads">
+      <img className="ads-img" src="/6.png" />
+      <div>
+        <div className="ads-title1">Export</div>
+        <div>
+          <p>If you require a particular product that isn’t readily available locally, our specialised export team is here to assist. Our international licensing allows us to supply a comprehensive range of medicines, extending our reach to over 100 countries and territories.</p>
+        </div>
+        <button className="aboutUs" onClick={() => {pointer.info("It's a React Demo...")}}>
+          LEARN MORE
+        </button>
+      </div>
+    </div>
+    <div className="ads">
+      <div>
+        <div className="ads-title1">Services</div>
+        <div>
+          <p>Our renowned service portfolio encompasses early access and named patient programs, patient dispensing, cannabis-based medicinal products, and Specials repackaging and over-labelling.</p>
+        </div>
+        <button className="aboutUs" onClick={() => {pointer.info("It's a React Demo...")}}>
+          LEARN MORE
+        </button>
+      </div>
+      <img className="ads-img" src="/7.png" />
+    </div>
   </main>
 )
 
