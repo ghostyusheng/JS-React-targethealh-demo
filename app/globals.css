@@ -128,7 +128,6 @@ s, i, em {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-image: url('../public/2.jpg');
-  background-size: contain;
 }
 
 .ads {
@@ -168,4 +167,22 @@ s, i, em {
   border-radius: 20px;
   font-size: 18px;
   font-weight: 700;
+}
+
+.body2 {
+  height: 620px;
+  width: 100%;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain;
+  background-image: url('../public/4.jpg');
+}
+
+.whatWeDo {
+  color: #e41e2e;
+  font-size: 40px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin: 120px 0;
 }

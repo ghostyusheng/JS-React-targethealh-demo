@@ -29,6 +29,9 @@ const Part1 = (
         </button>
       </div>
     </div>
+    <div className="body2">
+    </div>
+    <div className="whatWeDo">What we do</div>
   </main>
 )
 
