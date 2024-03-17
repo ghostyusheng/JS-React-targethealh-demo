@@ -80,6 +80,12 @@ const Part1 = (
       </div>
       <img className="ads-img" src="/7.png" />
     </div>
+    <div className="footer">
+      <img src="/logo.png" style={{ width: "300px", height: "114px" }} />
+      <p>© Target Healthcare Limited 2023 all rights reserved</p>
+      <p>LinkedIn | Cookie Policy | Going Carbon Neutral</p>
+      <img src="/logo2.png" style={{ width: "240px", height: "104px" }} />
+    </div>
   </main>
 )
 
