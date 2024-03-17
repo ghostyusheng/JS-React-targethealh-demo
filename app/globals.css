@@ -94,8 +94,14 @@ s, i, em {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 60px;
-  margin: 10px 0; 
+
+}
+
+.banner {
+  height: 800px;
+  width: 100%;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-image: url('../public/1.png');
 }

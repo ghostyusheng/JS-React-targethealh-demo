@@ -1,18 +1,23 @@
 'use client';
 import Image from "next/image";
 import React from 'react';
-import { ConfigProvider,Tabs } from 'antd';
+import { Button,ConfigProvider,Tabs } from 'antd';
 
-
+const Part1 = (
+  <div className="banner">
+    111
+  </div>
+)
 
 const onChange = (key) => {
   console.log(key);
 };
+
 const items = [
   {
     key: '1',
     label: 'Home',
-    children: 'Content of Tab Pane 1',
+    children: Part1,
   },
   {
     key: '2',
@@ -27,40 +32,61 @@ const items = [
   {
     key: '4',
     label: 'Retail',
-    children: 'Content of Tab Pane 3',
+    children: 'Not implement yet',
   },
   {
     key: '5',
     label: 'Export',
-    children: 'Content of Tab Pane 3',
+    children: 'Not implement yet',
   },
   {
     key: '6',
     label: 'Services',
-    children: 'Content of Tab Pane 3',
+    children: 'Not implement yet',
   },
   {
     key: '7',
     label: 'Quality',
-    children: 'Content of Tab Pane 3',
+    children: 'Not implement yet',
   },
   {
     key: '8',
     label: 'More',
-    children: 'Content of Tab Pane 3',
+    children: 'Not implement yet',
   },
   {
     key: '9',
     label: 'Contact Us',
-    children: 'Content of Tab Pane 3',
+    children: 'Not implement yet',
   },
 ];
 
+const OperationsSlot = {
+  left: 
+    <div style={{width: '55vw', marginLeft: '20px', display: 'flex'}}>
+      <img src="/logo.png" style={{ width: "185px", height: "70px" }} />,
+    </div>
+};
+
 export default function Home() {
+  const [alignValue, setAlignValue] = React.useState('center');
+  const [position, setPosition] = React.useState(['left', 'right']);
+
+  const slot = React.useMemo(() => {
+    if (position.length === 0) return null;
+    return position.reduce(
+      (acc, direction) => ({
+        ...acc,
+        [direction]: OperationsSlot[direction],
+      }),
+      {},
+    );
+  }, [position]);
+
   return (
     <main className="">
       <div className="header">
-        <img src="/logo.png" style={{ width: "185px", height: "70px" }} />
+        
         <ConfigProvider 
         theme={{
           token: {
@@ -75,16 +101,17 @@ export default function Home() {
         }}>
           <Tabs 
             defaultActiveKey="1"
+            tabBarExtraContent={slot}
             items={items}
             onChange={onChange}
-            inkBarColor="red"
-            itemActiveColor="red"
-            itemHoverColor="red"
-            itemSelectedColor="red"
+            indicator={{
+              size: (origin) => 20,
+              align: alignValue,
+            }}
           />
         </ConfigProvider>
-        
       </div>
+      
     </main>
   );
 }
