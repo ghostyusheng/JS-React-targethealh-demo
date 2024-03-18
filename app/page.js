@@ -89,6 +89,69 @@ const Part1 = (
   </main>
 )
 
+
+const Part2 = (<div>
+  <div className="banner2">
+      <div className="banner2-title">
+        <div>About Us</div>
+      </div>
+    </div>
+    <div className="body1">
+    </div>
+    <div className="ads">
+      <img className="ads-img2" src="/12.png" />
+      <div>
+        <div className="ads-title2">About Us</div>
+        <div>
+          <p>Target Healthcare is a distinguished MHRA-approved pharmaceutical manufacturer and wholesaler based in East Kilbride, Scotland.</p>
+        </div>
+        <div className="ads-title2">Our Business</div>
+        <div>
+          <p>At Target Healthcare, we have established ourselves as a leading distributor of generic, branded and unlicensed medicines. We cater for a diverse range of customers, including pharmacies, hospitals, dispensing doctors, pharmaceutical wholesalers, and buying groups across the UK and Europe.</p>
+        </div>
+        <div className="ads-title2">Our Team</div>
+        <div>
+          <p>The core of our success lies in our forward-thinking team of dedicated professionals. They bring their wealth of experience and expertise to offer exceptional customer service and speciality in bespoke areas of the pharmaceutical industry: Specials, Retail and Export.</p>
+        </div>
+        <div className="ads-title2">Our Promise</div>
+        <div>
+          <p>We deliver high-quality medicines across the supply chain, offering fast rates and competitive prices. Orders placed before 5pm come with our next-day delivery guarantee. With Target Healthcare, you choose a trusted pharmaceutical partner committed to excellence.</p>
+        </div>
+      </div>
+    </div>
+    <div className="footer">
+      <img src="/logo.png" style={{ width: "300px", height: "114px" }} />
+      <p>© Target Healthcare Limited 2023 all rights reserved</p>
+      <p>LinkedIn | Cookie Policy | Going Carbon Neutral</p>
+      <img src="/logo2.png" style={{ width: "240px", height: "104px" }} />
+    </div>
+</div>)
+
+const Part3 = (<div>
+  <div className="banner2">
+      <div className="banner2-title">
+        <div>Specials</div>
+      </div>
+    </div>
+    <div className="body1">
+    </div>
+    <div className="ads">
+      <img className="ads-img" src="/5.png" />
+      <div>
+        <div className="ads-title1">Specials</div>
+        <div>
+          <p>At our cutting-edge facilities, we operate under MHRA regulations and licenses. We manufacture and supply Specials and unlicensed medicines (both Drug Tariff and Non-Drug Tariff lines) to pharmacies, hospitals, dispensing doctors, pharmaceutical wholesalers and NHS Trusts throughout the UK.</p>
+        </div>
+      </div>
+    </div>
+    <div className="footer">
+      <img src="/logo.png" style={{ width: "300px", height: "114px" }} />
+      <p>© Target Healthcare Limited 2023 all rights reserved</p>
+      <p>LinkedIn | Cookie Policy | Going Carbon Neutral</p>
+      <img src="/logo2.png" style={{ width: "240px", height: "104px" }} />
+    </div>
+</div>)
+
 const onChange = (key) => {
   console.log(key);
 };
@@ -102,12 +165,12 @@ const items = [
   {
     key: '2',
     label: 'About Us',
-    children: 'Not implement yet',
+    children: Part2,
   },
   {
     key: '3',
     label: 'Specials',
-    children: 'Not implement yet',
+    children: Part3,
   },
   {
     key: '4',
